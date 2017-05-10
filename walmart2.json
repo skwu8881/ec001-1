@@ -1,0 +1,32 @@
+[
+{
+"itemId": 15076191,
+"parentItemId": 15076191,
+"name": "Apple iPod Touch 4th Generation 32GB with Bonus Accessory Kit",
+"salePrice": 189,
+"thumbnailImage": "http://i.walmartimages.com/i/p/11/13/00/02/31/1113000231755_100X100.jpg",
+"bundle": true,
+"availableOnline": true
+},
+
+{
+"itemId": 15075125,
+"parentItemId": 15075125,
+"name": "Apple iPod touch 4th Generation 32GB",
+"salePrice": 199.99,
+"thumbnailImage": "http://i.walmartimages.com/i/p/00/88/59/09/39/0088590939509_100X100.jpg",
+"bundle": true,
+"availableOnline": true
+},
+
+{
+"itemId": 25174174,
+"parentItemId": 25174174,
+"name": "Apple iPod touch 5th Generation Space Gray and Silver",
+"msrp": 239,
+"salePrice": 214.99,
+"thumbnailImage": "http://i.walmartimages.com/i/p/00/88/59/09/72/0088590972894_100X100.jpg",
+"bundle": true,
+"availableOnline": true
+}
+] 

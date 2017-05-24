@@ -99,7 +99,7 @@
     "picture": "paula_gates.jpg",
     "Latitude": 24.1384468,
     "Longitude": 120.7036533,
-    "Address": 24.1384468,120.7036533
+    "Address": "24.1384468,120.7036533"
   },
   {
     "id": 5,
@@ -116,7 +116,7 @@
     "picture": "ray_moore.jpg",
     "Latitude": 24.1149542,
     "Longitude": 120.6519714,
-    "Address": 24.1149542,120.6519714
+    "Address": "24.1149542,120.6519714"
   },
   {
     "id": 6,
@@ -133,7 +133,7 @@
     "picture": "paul_jones.jpg",
     "Latitude": 24.1183312,
     "Longitude": 120.6608196,
-    "Address": 24.1183312,120.6608196
+    "Address": "24.1183312,120.6608196"
   },
   {
     "id": 3,
@@ -150,7 +150,7 @@
     "picture": "eugene_lee.jpg",
     "Latitude": 24.1166993,
     "Longitude": 120.665471,
-    "Address": 24.1166993,120.665471
+    "Address": "24.1166993,120.665471"
   },
   {
     "id": 4,
@@ -167,7 +167,7 @@
     "picture": "john_williams.jpg",
     "Latitude": 24.1288489,
     "Longitude": 120.6803184,
-    "Address": 24.1288489,120.6803184
+    "Address": "24.1288489,120.6803184"
   },
   {
     "id": 2,
@@ -184,7 +184,7 @@
     "picture": "julie_taylor.jpg",
     "Latitude": 24.126121,
     "Longitude": 120.659032,
-    "Address": 24.126121,120.659032
+    "Address": "24.126121,120.659032"
   },
   {
     "id": 1,
@@ -201,6 +201,6 @@
     "picture": "james_king.jpg",
     "Latitude": 24.1231903,
     "Longitude": 120.6600755,
-    "Address": 24.1231903,120.6600755
+    "Address": "24.1231903,120.6600755"
   }
 ]

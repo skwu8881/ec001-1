@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shopping Cart</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 118px;
+	height: 39px;
+	z-index: 1;
+	left: 445px;
+	top: 549px;
+}
+</style>
+<link href="css/codiqa.ext.min.css" rel="stylesheet">
+<link href="css/jquery.mobile-1.3.1.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="Styles/dmxSlidingCart/light-default/light-default.css" />
+<link rel="stylesheet" type="text/css" href="bootstrap/3/css/bootstrap.css" />
+<script src="ScriptLibrary/jquery-latest.pack.js"></script>
+<script src="js/jquery.mobile-1.3.1.min.js"></script>
+<script src="js/codiqa.ext.min.js"></script>
+<script src="js/scripts.js"></script>
+<script type="text/javascript" src="ScriptLibrary/dmxSlidingCart.js"></script>
+<script type="text/javascript">
+/* dmxSlidingCart name "dmxSlidingCart" */
+  jQuery(document).ready(
+   function()
+     {
+       jQuery.dmxSlidingCart(
+         {"business": "skwu9876@gmail.com", "currency": "NTD", "paypalURL": "https://www.paypal.com/tw/cgi-bin/webscr?", "strings": {"button": "Checkout", "subtotal": "Subtotal", "discount": "Discount", "shipping": "Shipping", "processing": "Processing"}}
+       );
+     }
+ );
+  /* END dmxSlidingCart name "dmxSlidingCart" */
+function dmxSlidingCartAction(action, data) { // v1.01
+	switch(action){
+		case 'addToCart':
+			$.dmxSlidingCart.addToCart(data || {});
+			break;
+		case 'show':
+			$.dmxSlidingCart.show();
+			break;
+		case 'hide':
+			$.dmxSlidingCart.hide();
+			break;
+		case 'toggle':
+			$.dmxSlidingCart.toggle();
+			break;
+	}
+}
+</script>
+<script type="text/javascript" src="bootstrap/3/js/bootstrap.js"></script>
+</head>
+<body>
+  <div data-role="page" data-control-title="Shopping Mall" id="page1">
+      <div data-role="panel" id="panel1" data-position="left" data-display="reveal"
+      data-theme="a">
+          <ul data-role="listview" data-divider-theme="h" data-inset="false">
+              <li data-theme="a">
+                  <a href="#page2" data-transition="slide">
+                      Jawbone up3
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page3" data-transition="slide">
+                      Xiaomi
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page4" data-transition="slide">
+                      Samsung Gear Fit
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page5" data-transition="slide">
+                      GARMIN vivosmart
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page6" data-transition="slide">
+                      Fitbit charge HR
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page7" data-transition="slide">
+                      Apple Watch
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page8" data-transition="slide">
+                      Moto 360
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page9" data-transition="slide">
+                      Samsung Gear 2
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page10" data-transition="slide">
+                      Sony SmartWatch 3 SWR50
+                  </a>
+              </li>
+              <li data-theme="a">
+                  <a href="#page11" data-transition="slide">
+                      LG G Watch
+                  </a>
+              </li>
+          </ul>
+      </div>
+      <div data-theme="a" data-role="header">
+          <a data-controltype="panelbutton" data-role="button" href="#panel1" data-icon="bars"
+          data-iconpos="left">
+              Product
+          </a>
+          <h3>
+              Shopping Mall
+          </h3>
+      </div>
+      <div data-role="content">
+          <div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>&nbsp;</p>
+      <p><img src="img/shop icon/jawbone up3 icon.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;Jawbone&quot;, &quot;item_number&quot;: &quot;001&quot;, &quot;amount&quot;: 2280, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/Xiaomi icon.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;Xiaomi&quot;, &quot;item_number&quot;: &quot;002&quot;, &quot;amount&quot;: 448, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/GARMIN vivosmart1.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;Garmin&quot;, &quot;item_number&quot;: &quot;003&quot;, &quot;amount&quot;: 4990, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/Samsung Gear Fit icon.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;GearFit&quot;, &quot;item_number&quot;: &quot;004&quot;, &quot;amount&quot;: 4790, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/Fitbit charge HR1.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;Fitbit&quot;, &quot;item_number&quot;: &quot;005&quot;, &quot;amount&quot;: 4300, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/Apple Watch1.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;AppleWatch&quot;, &quot;item_number&quot;: &quot;006&quot;, &quot;amount&quot;: 10000, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+      <img src="img/shop icon/MOTO3601.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;Motor360&quot;, &quot;item_number&quot;: &quot;007&quot;, &quot;amount&quot;: 9800, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/Samsung Gear21.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;SamsungGear2&quot;, &quot;item_number&quot;: &quot;008&quot;, &quot;amount&quot;: 7990, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/Sony Smartwatch3 swr501.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;SONYSmartWatch&quot;, &quot;item_number&quot;: &quot;009&quot;, &quot;amount&quot;: 8650, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" />
+	  <img src="img/shop icon/LG G WATCHH1.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;LGGWatch&quot;, &quot;item_number&quot;: &quot;010&quot;, &quot;amount&quot;: 7880, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" /></p>
+	  <img src="img/shop icon/LG G WATCHH1.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;LGGWatch&quot;, &quot;item_number&quot;: &quot;010&quot;, &quot;amount&quot;: 7880, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" /></p>
+	  <img src="img/shop icon/LG G WATCHH1.png" width="270" height="270" onclick="dmxSlidingCartAction('addToCart',{&quot;item_name&quot;: &quot;LGGWatch&quot;, &quot;item_number&quot;: &quot;010&quot;, &quot;amount&quot;: 7880, &quot;shipping&quot;: 150, &quot;quantity&quot;: 1, &quot;discount_amount&quot;: 0, &quot;discount_amount2&quot;: 0})" /></p>
+	  <div></div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Jawbone up3" id="page2">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=mRVrgQrkWWQ"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Jawbone up3
+          </h3>
+      </div>
+      <div data-role="content" style="padding: px">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 120px" src="img/images-1.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <pre>
+                  <strong>
+                      <span style="font-size: small; font-family: 'times new roman', times;"
+                      data-mce-style="font-size: small; font-family: 'times new roman', times;">
+                          ★尺寸：20mm x 12.2mm x 3mm-9.3 mm
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★重量：29 克
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★材質：電鍍鋁、鍍錫不銹鋼、TPU
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池壽命：長達 7 天
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★充電需時：大約 100 分鐘
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★防水：高達 10 米
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★三個單色 LED 燈：藍色睡眠燈、
+                          <br>
+                          橙色活動燈和白色通知燈
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★介面：藍牙® 4.0 BTLE
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★感應器：三軸加速感應器
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統：Andorid、ios
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色：
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.免費的 UP® 應用程式 2.智能教練
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.活動記錄 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; 4.步數與距離記錄
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.卡路里消耗量 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6.記錄飲食狀況
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          7.睡眠追蹤 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp;8.訂立目標
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          9.時間 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; &nbsp; 10.Smart Alarm™
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          11.閒置提示™ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;12.監察心臟健康
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          13.自動活動分類 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;14.進階睡眠記錄
+                      </span>
+                  </strong>
+              </pre>
+              <pre>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          15.無限同步
+                      </span>
+                  </strong>
+              </pre>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Xiaomi" id="page3">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=kwbx6Kn6DVU"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Xiaomi
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 100px" src="img/xiaomi.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★尺寸：36mm x 14mm x 9mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★介面：藍牙® 4.0 BTLE
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★材質：鋁合金表面，雷射微穿孔
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★防水防塵：IP67 防水、防塵等級
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★3 組 LED 燈顯示系統狀態
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★感應器：ADXL363三軸加速感應器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池壽命：待機可達 30 天
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統：Android 4.4
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色：
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.紀錄每天運動數據 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;2.軍用感應器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.手機感應解鎖 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; &nbsp;4.自動監控睡眠質量
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.智能鬧鐘震動喚醒 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;6.無線同步
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          7.綁定身分免密碼解鎖手機&nbsp;8.手機來電提醒
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          9.高低溫環境、耐撞、耐腐蝕
+                      </span>
+                  </strong>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Samsung Gear Fit" id="page4">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=Ro1sRmxu4BM"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Samsung Gear Fit
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 290px; height: 112px" src="img/samsung-gear-fit.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★尺寸：57.4 x 23.4 x 11.95 mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★介面：藍牙® 4.0
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕技術：曲面 Super AMOLED
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕尺寸：1.84吋
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕解析度：432 x 128pixels
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★感應器：三軸感應器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池容量：210mAh
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★防水防塵：IP67 防水、防塵等級
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統：特製版 Tizen OS 系統
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色：
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.運動模式 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp;&nbsp;2.心跳偵測
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.即時通知提醒 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4.尋找手機
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.智慧鎖定 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp;&nbsp;6.睡眠測試
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          7.輕薄設計 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp;&nbsp;8.音樂播放
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          9.計時器、計步器
+                      </span>
+                  </strong>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="GARMIN vivosmart" id="page5">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=v4_KdTKsAoM"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              GARMIN vivosmart
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 122px" src="img/garmin-vivosmart.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★尺寸：15.5-22.1cm/12.7-17.2cm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★螢幕：曲面OLED, 128 x 16 pixels
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★操作方式：觸控式螢幕
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★重量：19g/18.7g/1.4g(保護扣)
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池種類：充電式鋰電池
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池壽命：長達 7 天
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★防水：水下50m
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★介面：藍牙® 4.0 BTLE / ANT+
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統：windows、MAC
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色：
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.隨身鬧鐘 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; &nbsp; &nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          2.久坐提示
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.尋找我的手機 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          4.音樂控制
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.簡訊提醒/閱讀 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          6.來電顯示
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          7.Garmin Connect連結 &nbsp; &nbsp;&nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          8.自動上傳
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          9.震動提示 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          10.支援心率感測器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          11.每日活動追蹤 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          12.每日建議目標
+                      </span>
+                  </strong>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Fitbit charge HR" id="page6">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=DOKE-ZIKljU"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Fitbit charge HR
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 125px" src="img/fitbit-charge-hr.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★尺寸：5.5-6.5/6.3-7.6英吋
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★包裝內容：充電線、無線USB插頭
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★螢幕：OLED
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★材質：柔軟耐用具彈性、手術級不鏽鋼
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池種類：充電式鋰電池
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池壽命：5天
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★防水：1個標準大氣壓
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★溫度：-20
+                          <sup>
+                              o
+                          </sup>
+                          C-45
+                          <sup>
+                              o
+                          </sup>
+                          C
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★最大工作海拔：30.000英尺
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★介面：藍牙® 4.0
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★同步範圍：6M
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統：windows、MAC
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色：
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.PurePulse
+                          <sup>
+                              TM
+                          </sup>
+                          自動測量心率 &nbsp; &nbsp;&nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          2.自動睡眠紀錄
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.喚醒鬧鐘 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          4.無線同步
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.來電顯示 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                      </span>
+                  </strong>
+                  <strong style="font-size: 10px;">
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          6.活動紀錄
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          7.鍛鍊追蹤
+                      </span>
+                  </strong>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Apple Watch" id="page7">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=CPpMeRCG1WQ"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Apple Watch
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 135px" src="img/applewatchsport.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★螢幕尺寸: 1.5吋
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身長度:38mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身寬度:38mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★處理器:Apple S1
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★偵測功能: 加速度計、心跳偵測
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★進階功能: 即時訊息、GPS
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統: Watch OS
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色:
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.採用 316L 不鏽鋼及鋁金屬的特製合金打造、藍寶石水晶顯示器、陶瓷錶背
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          2.採用 Watch OS 作業系統
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.內建 Apple S1 處理器與 Appel Taptic Engine 線性制動器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          4.1.5 吋 Retina 視網膜觸控螢幕
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.內建 Digital Touch 功能
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          6.內建心率偵測器等各種感應器、體能訓練 App
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          7.可以透過 Siri 掌握每日行程、導航或是傳送訊息
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          8.提供Fluoroelastomer 材質運動型錶帶、經典扣式錶帶、米蘭式錶環、皮革錶環、時尚環扣錶帶等錶帶
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <br>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Moto 360" id="page8">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=X8DOUSGGw10"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Moto 360
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 130px" src="img/moto360.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★螢幕尺寸:1.56吋
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★傳輸介面:藍牙
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池容量:320mAh
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身重量:49g
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕材質:LCD
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★偵測功能:加速度計、心跳偵測
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★進階功能:即時訊息、防水
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統:Andriod Wear
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色:
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1. 可在水下 3 英尺停留 30 分
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          2. 1.56 吋 LCD 圓形螢幕，320 x 290pixels 解析度螢幕
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3. 內建德州儀器 TI OMAP 3 處理器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          4. 兼容 Android 4.3 以上作業系統
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5. 內建計步器、心跳頻率追蹤器、手腕晃動啟動
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Samsung Gear 2" id="page9">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=A5HliZ7LG3Y"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Samsung Gear 2
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 130px" src="img/samsung-gear-2.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★螢幕尺寸:1.63吋
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕解析度: 320 x 320pixels
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕材質: Super AMOLED
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身長度:58.4mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身寬度:36.9mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★è機身厚度:10mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池容量:300mAh
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身重量:68g
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★傳輸介面: microUSB、藍芽
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★處理器分類:雙核心處理器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★ROM/內建儲存空間:4GB
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★RAM記憶體:512MB
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★處理器:1GHz
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★相機畫素:200萬畫素
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★影片播放格式:3GP、MP4
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★藍牙版本:4.0
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★偵測功能:螺旋儀、心跳偵測器、加速度計、紅外線
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★進階功能:防水、即時訊息、防塵
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★通話功能：降噪麥克風、來電顯示
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統:Tizen OS
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色:
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.內建特製版 Tizen OS 系統
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          2.200 萬畫素 AF 相機、可錄製 1080P Full HD 影片
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.1.63吋320 x 320pixels Super AMOLED 螢幕
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          4.IP67 防水防塵能力與可更換式的錶帶設計
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.支援 IrLED 可遙控家中電視
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <br>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="Sony SmartWatch 3 SWR50" id="page10">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=yxuorlyq7fw"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              Sony SmartWatch 3 SWR50
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 140px" src="img/sony-smartwatch-3-swr50.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★螢幕尺寸:1.6吋
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕解析度: 320 x 320pixels
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身重量:45g
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★偵測功能:加速度計、陀螺儀
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★傳輸介面: NFC, microUSB, 藍牙
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★藍牙版本:4.0
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★進階功能:防水、即時訊息、GPS、防塵
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★通話功能:來電顯示、防噪麥克風
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★處理器分類:四核心處理器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★ROM/內建儲存空間:4GB
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★RAM記憶體:512MB
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統:Andriod Wear
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色:
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.1.6 吋 TFT LCD 半透射顯示器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          2.內建 ARM A7, 1.2GHz 四核心處理器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3. IP68 國際防塵防水等級認證
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          4.內建 420mA 電池，續航力達 2 天
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+  <div data-role="page" data-control-title="LG G Watch" id="page11">
+      <div data-theme="a" data-role="header">
+          <a data-role="button" href="https://www.youtube.com/watch?v=TLYgU3XErGU"
+          class="ui-btn-right">
+              Video
+          </a>
+          <a data-role="button" href="#page1" class="ui-btn-left">
+              Back
+          </a>
+          <h3>
+              LG G Watch
+          </h3>
+      </div>
+      <div data-role="content">
+          <div style="" data-controltype="image">
+              <img style="width: 288px; height: 140px" src="img/lg-g-watch.jpg">
+          </div>
+          <hr style="height:3px; background-color:#ccc; border:0; margin-top:12px; margin-bottom:12px;">
+          <div data-controltype="textblock">
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★螢幕尺寸:1.65吋
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕解析度:280 x 280pixels
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★主螢幕材質:IPS
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身長度:46.5mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身寬度:37.9mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身厚度:9.95mm
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★電池容量:400mAh
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★機身重量:61g
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★處理器分類:四核心處理器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★處理器: Qualcomm Snapdragon 400 APQ8026, 1.2GHz
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★傳輸介面: microUSB, 藍牙
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★進階功能:防塵、防水
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★作業系統:Andriod Wea
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          ★功能特色:
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          1.支援 IP 67 防水防塵能力
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          2.兼容 Android 4.3 Jelly Bean 以上作業系統
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          3.搭載 Qualcomm Snapdragon 400 APQ8026, 1.2GHz 四核心處理器
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          4.支援藍牙 4.0 / microUSB 充電及傳送介面
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          5.內建碼錶、簡訊、電子郵件和記事功能
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <strong>
+                      <span style="font-family: 'times new roman', times; font-size: small;"
+                      data-mce-style="font-family: 'times new roman', times; font-size: small;">
+                          6.內建 512MB RAM / 4GB ROM 儲存空間
+                      </span>
+                  </strong>
+              </p>
+              <p>
+                  <br>
+              </p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
